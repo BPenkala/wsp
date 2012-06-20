@@ -1,0 +1,371 @@
+header img {
+	float: left;
+	max-width: 20%;
+	padding: 6.5% 0 1% 0;
+}
+
+header {
+	padding: 1%;
+	color: #003366;
+}
+
+#header_left {
+	float: left;
+	width: 60%;
+}
+
+h1 {
+	font-family: 'Oleo Script', arial, sans-serif;
+	font-size: 1.85em;
+	font-weight: none;
+	padding: 5% 0 0 0;
+}
+
+h3 {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#search1 {
+	float: right;
+	max-width: 38%;
+	padding: 9% 0 0 0;
+}
+
+#search1 input {
+	width: 70%;
+	margin-top: 2%;
+}
+
+.button_style {
+	float: right;
+	background-color: #339933;
+	border-radius: 10px;
+	border: 2px solid #33cc33;
+	display: inline-block;
+	color: #FFF;
+	font-family: inherit;
+	font-size: .7em;
+	font-weight: bold;
+	padding: 3% .25%;
+	text-decoration: none;
+}
+.button_style: hover {
+	background-color:#339933;
+}
+
+.button_style: active {
+	position:relative;
+	top:1px;
+}
+
+.button_style2 {
+	background-color: #339933;
+	border-radius: 10px;
+	border: 2px solid #33cc33;
+	display: inline-block;
+	color: #FFF;
+	font-family: inherit;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-top: 3%;
+	padding: 3% 10%;
+	text-decoration: none;
+}
+.button_style2: hover {
+	background-color:#339933;
+	opacity: 50%;
+}
+
+.button_style2: active {
+	position:relative;
+	top:1px;
+}
+
+#search1 input[type="search"] {
+	height: 1.5em;
+}
+
+body {
+	font-family: 'Questrial', arial, sans-serif;
+	margin: 0 auto;
+	max-width: 960px;
+	background-image: linear-gradient(top, #FFFFFF 27%, #999966 71%);
+	background-image: -o-linear-gradient(top, #FFFFFF 27%, #999966 71%);
+	background-image: -moz-linear-gradient(top, #FFFFFF 27%, #999966 71%);
+	background-image: -webkit-linear-gradient(top, #FFFFFF 27%, #999966 71%);
+	background-image: -ms-linear-gradient(top, #FFFFFF 27%, #999966 71%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop
+	(0.27, #FFFFFF),color-stop(0.71, #999966));
+}
+
+nav {
+	border: 1px solid #000;
+	float: left;
+	width: 99.8%;
+	overflow: hidden;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+nav li a {
+	display: block;
+	float: left;
+	padding: 1% 4.004% 1% 4.002%;
+	color: #000;
+	text-decoration: none;
+	background: #FFCC33;
+}
+
+nav li a:hover { 
+	background: #CC3333; 
+	text-decoration: underline;
+	color: #FFF;
+}
+
+#wrapper {
+	float: left;
+	width: 99.8%;
+	border: 1px solid #000;
+	background: #FFF;
+}
+
+#main_content {
+	clear: left;
+	float: left;
+	width: 60%;
+	padding: 0 2% 2% 2%;
+	display: inline;
+}
+
+#required_fields {
+	font-size: .75em;
+}
+
+aside {
+	font-size: .85em;
+	color: #FFF;
+	float: right;
+	width: 30%;
+	padding:  1% 2% 2% 2%;
+	display: inline;
+	background: #003366;
+}
+
+
+aside p {
+	line-height: 1.5em;
+}
+
+aside a {
+	color: #FFF;
+}
+
+#agnosto, #lochrane {
+	max-width: 50%;
+}
+
+#principal a, #asst_principal a {
+	color: #FFF;
+}
+
+#principal, #asst_principal {
+	padding: 3% 0 3% 0;	
+}
+
+#teacher_directory, #staff_directory, #location {
+	padding: 0 3% 0 0;
+	line-height: .85em;
+}
+
+footer {
+	clear: left;
+	border: 1px solid #000;
+	background: #99CCFF;
+	color: #003366;
+	text-align: left;
+	padding: 2%;
+	border: 1px solid #000;
+	font-weight: bold;
+}
+ 
+ 
+/* --- Begin Form Styling --------------------*/
+#contact_form {
+	float: left;
+	width: 75%;
+	padding: .75% 2.5% 0 2.5%;
+}
+
+label {
+	display: block;
+	margin: 1.1em 0 0;
+}
+input:focus {
+	border: 1px solid #FF0000;
+}
+input[type="text"], input[type="email"] {
+	clear: both;
+	border: 1px solid #000;
+	width: 65%;	
+	height: 1.75em;
+}
+textarea {
+	width: 85%;
+	display: block;
+	margin-bottom: .25em;
+}
+select {
+	height: 2em;
+	width: 50%;
+	margin-bottom: .75em;
+}
+/* --- End Form Styling --------------------*/
+
+/* ---Begin Media Queries--------------- */
+
+/*---  Media Query for full-size displays (desktop/laptop) ---*/
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	header {
+		font-size: .7em;
+	}
+	nav {
+		font-size: .81em;
+	}
+	aside {
+		font-size: .85em;
+	}
+	
+	#cta, #events, #newsletter {
+		font-size: .85em;
+	}
+	
+	#upcoming_cal {
+		display: none;
+	}
+	
+	.button_style2 {
+		font-size: .8em;
+	}
+	
+	footer {
+		font-size: .85em;
+	}
+}
+/*---  End Media Query for full-size displays (desktop/laptop) ---*/
+
+/*---  Media Query for medium displays (tablets/readers/iPads) ---*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	header {
+		font-size: .7em;
+	}
+	nav {
+		font-size: .65em;
+	}
+	aside {
+		font-size: .65em;
+		width: 20%;
+	}
+	
+	#search1 {
+		display: none;
+	}
+	#cta, #events, #newsletter {
+		font-size: .75em;
+	}
+	
+	#upcoming_cal {
+		display: none;
+	}
+	
+	.button_style2 {
+		font-size: .8em;
+	}
+	
+	footer {
+		font-size: .85em;
+	}
+
+
+}
+/*--- End Media Query for medium displays (tablets/readers/iPads) ---*/
+
+/*---  Media Query for smaller displays (smartphone) ---*/
+@media only screen and (max-width: 480px) {
+	header {
+		font-size: .6em;
+	}
+	
+	header img {
+		display: none;
+	}
+	nav ul {
+		font-family: inherit;
+		font-size: .7em;
+		list-style-type: none;
+		padding: .5% 0;
+	}
+	nav li a {
+		display: block;
+		margin: 0 auto;
+		padding: 5%;
+		text-decoration: none;
+		list-style-type: none;
+		letter-spacing: 0.1em;
+		line-height: 1.75em;
+		height: 1.75em;
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+	}
+	#cta p {
+		font-size: .65em;
+	}
+	#cta img {
+		max-width: 45%;
+	}
+	
+	body {
+		float: none;
+		background: #FFF;
+	}
+	aside {
+		display: none;
+	}
+	
+	#search1 {
+		display: none;
+	}
+	#events, #newsletter {
+		display: none;
+	}
+
+	#upcoming_cal {
+		display: none;
+	}
+	
+	.button_style2 {
+		font-size: .8em;
+	}
+	
+	footer {
+		font-size: .85em;
+	}
+
+}
+	
+/*--- End Media Query for smaller displays ---*/
+
+/* ---End Media Queries--------------- */
