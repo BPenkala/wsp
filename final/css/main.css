@@ -66,9 +66,9 @@ h3 {
 	display: inline-block;
 	color: #FFF;
 	font-family: inherit;
-	font-size: .9em;
+	font-size: 1.25em;
 	font-weight: bold;
-	padding: 5% 15%;
+	padding: 4% 12%;
 	text-decoration: none;
 }
 .button_style2:hover {
@@ -77,6 +77,28 @@ h3 {
 }
 
 .button_style2:active {
+	position:relative;
+	top:1px;
+}
+
+.button_style3 {
+	background-color: #339933;
+	border-radius: 10px;
+	border: 2px solid #33CC33;
+	display: inline-block;
+	color: #FFF;
+	font-family: inherit;
+	font-size: .9em;
+	font-weight: bold;
+	padding: 9% 12%;
+	text-decoration: none;
+}
+.button_style3:hover {
+	background-color:#339933;
+	opacity: 50%;
+}
+
+.button_style3:active {
 	position:relative;
 	top:1px;
 }
@@ -114,6 +136,7 @@ nav {
 	float: left;
 	width: 99.8%;
 	overflow: hidden;
+	background: #FFCC33;
 }
 
 nav ul {
@@ -133,6 +156,7 @@ nav li a {
 	color: #000;
 	text-decoration: none;
 	background: #FFCC33;
+	background: #FFCC33;
 }
 
 nav li a:hover { 
@@ -143,6 +167,7 @@ nav li a:hover {
 
 #wrapper {
 	float: left;
+	width: 99.8%;
 	border: 1px solid #000;
 	background: #FFF;
 }
@@ -151,8 +176,38 @@ nav li a:hover {
 	clear: left;
 	float: left;
 	width: 60%;
+	line-height: 1.1em;
 	padding: 0 2% 2% 2%;
 	display: inline;
+}
+
+#contact_content {
+	clear: left;
+	float: left;
+	width: 60%;
+	padding: 0 2% 2% 2%;
+	display: inline;
+}
+
+#required_fields {
+	font-size: .75em;
+}
+
+#contact_aside {
+	color: #FFF;
+	float: right;
+	width: 30%;
+	padding:  1% 2% 2% 2%;
+	display: inline;
+	background: #003366;
+}
+
+#contact_aside p {
+	line-height: 1.5em;
+}
+
+#contact_aside a {
+	color: #FFF;
 }
 
 #policies_content, #about_content {
@@ -218,9 +273,10 @@ nav li a:hover {
 	padding: 10% 8% 0 0;
 }
 
-aside {
+aside, #calendar_aside {
 	color: #FFF;
 	float: right;
+	font-size: 1em;
 	width: 30%;
 	padding:  .75% 2% 2% 2%;
 	display: inline;
@@ -236,7 +292,7 @@ aside {
 	background: #003366;
 }
 
-aside p {
+aside, #calendar_aside p {
 	font-size: .85em;
 	line-height: 1.5em;
 }
@@ -247,6 +303,10 @@ aside p {
 }
 
 #aside, #about_aside a {
+	color: #FFF;
+}
+
+#calendar_aside a {
 	color: #FFF;
 }
 
@@ -266,6 +326,44 @@ aside p {
 	color: #FFF;
 }
 
+#calendar {
+	max-width: 85%;
+	padding: 1% 2% 2% 2%;
+}
+
+#images {
+	width: 100%;
+	padding: 1% 2% 1% 2%;
+}
+
+#images img {
+	max-width: 27%;
+}
+
+#images p {
+	display: inline;
+	padding: 0 1.92% 0 0;
+	margin: 0;
+}
+
+#computer_img {
+	float: right;
+	max-width: 35%;
+	padding: 9%;
+}
+
+#aplus {
+	float: right;
+	max-width: 40%;
+	padding: 5%;
+}
+
+#staff_img {
+	float: none;
+	max-width: 80%;
+}
+
+
 #school_img {
 	max-width: 90%;
 	padding: 10% 0 0 0;
@@ -279,6 +377,10 @@ aside p {
 	padding: 2% 2% 5% 0%;
 }
 
+#tardies li{
+	padding: 2% 0 0 0;
+}
+
 footer {
 	clear: left;
 	border: 1px solid #000;
@@ -288,6 +390,10 @@ footer {
 	padding: 2%;
 	border: 1px solid #000;
 	font-weight: bold;
+}
+
+#img_acknowledge {
+	font-size: .75em;
 }
 
 label {
@@ -304,22 +410,71 @@ input[type="text"], input[type="email"] {
 	height: 1.5em;
 }
 
+/* --- Begin Contact Form Styling --------------------*/
+#contact_form {
+	float: left;
+	width: 75%;
+	padding: .75% 2.5% 0 2.5%;
+}
+
+#contact_form label {
+	display: block;
+	margin: 1.1em 0 0;
+}
+#contact_form input:focus {
+	border: 1px solid #FF0000;
+}
+#contact_form input[type="text"], #contact_form input[type="email"] {
+	clear: both;
+	border: 1px solid #000;
+	width: 65%;	
+	height: 1.75em;
+}
+#contact_form textarea {
+	width: 85%;
+	display: block;
+	margin-bottom: .25em;
+}
+#contact_form select {
+	height: 2em;
+	width: 50%;
+	margin-bottom: .75em;
+}
+/* --- End Contact Form Styling --------------------*/
+
 /* ---Begin Media Queries--------------- */
 
 /*---  Media Query for full-size displays (desktop/laptop) ---*/
 @media only screen and (min-width: 768px) and (max-width: 960px) {
 	header {
-		font-size: .7em;
+		font-size: .9em;
 	}
+	
 	nav {
-		font-size: .81em;
+		font-size: .825em;
+		border: 1px solid #000;
+		float: left;
+		width: 99.8%;
+		overflow: hidden;
+		background: #FFCC33;
 	}
+
+	nav li a {
+		display: block;
+		float: left;
+		padding: 1% 4% 1% 4%;
+		color: #000;
+		text-decoration: none;
+		background: #FFCC33;
+	}
+
+	
 	aside {
-		font-size: .85em;
+		font-size: .9em;
 	}
 	
 	#cta, #events, #newsletter {
-		font-size: .85em;
+		font-size: .875em;
 	}
 	
 	#upcoming_cal {
@@ -339,14 +494,27 @@ input[type="text"], input[type="email"] {
 /*---  Media Query for medium displays (tablets/readers/iPads) ---*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	header {
+		font-size: .75em;
+	}
+	
+	nav li a {
 		font-size: .7em;
+		line-height: 2em;
+		display: block;
+		float: left;
+		padding: 1% 2.5% 1% 2.5%;
+		color: #000;
+		text-decoration: none;
+		background: #FFCC33;
 	}
-	nav {
-		font-size: .65em;
-	}
+	
 	aside {
-		font-size: .65em;
-		width: 20%;
+		font-size: .75em;
+		width: 30%;
+	}
+	
+	#main_content {
+		font-size: .85em;
 	}
 	
 	#search1 {
@@ -361,11 +529,11 @@ input[type="text"], input[type="email"] {
 	}
 	
 	.button_style2 {
-		font-size: .8em;
+		font-size: .75em;
 	}
 	
 	footer {
-		font-size: .85em;
+		font-size: .75em;
 	}
 
 
@@ -375,21 +543,19 @@ input[type="text"], input[type="email"] {
 /*---  Media Query for smaller displays (smartphone) ---*/
 @media only screen and (max-width: 480px) {
 	header {
-		font-size: .6em;
+		font-size: .8em;
 	}
 	
 	header img {
 		display: none;
 	}
 	nav ul {
-		font-family: inherit;
-		font-size: .7em;
+		font-size: .85em;
 		list-style-type: none;
 		padding: .5% 0;
 	}
 	nav li a {
 		display: block;
-		margin: 0 auto;
 		padding: 5%;
 		text-decoration: none;
 		list-style-type: none;
@@ -402,20 +568,16 @@ input[type="text"], input[type="email"] {
 	#cta p {
 		font-size: .65em;
 	}
-	#cta img {
-		max-width: 45%;
-	}
 	
 	body {
 		background: #FFF;
 	}
 	#contact_form {
 		float: left;
-		width: 85%;
 		margin: 3%;
 
 	}
-	aside {
+	aside, #contact_aside {
 		display: none;
 	}
 	
