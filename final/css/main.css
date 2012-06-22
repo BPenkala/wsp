@@ -21,7 +21,6 @@ header {
 h1 {
 	font-family: 'Oleo Script', arial, sans-serif;
 	font-size: 1.85em;
-	font-weight: none;
 	padding: 5% 0 0 0;
 }
 
@@ -416,13 +415,13 @@ input[type="text"], input[type="email"] {
 	padding: 3% .25%;
 	text-decoration: none;
 }
-.button_style: hover {
-	background-color:#339933;
+.button_style a:hover {
+	background-color: #339933;
 }
 
-.button_style: active {
-	position:relative;
-	top:1px;
+.button_style active {
+	position: relative;
+	top: 1px;
 }
 
 .button_style2 {
@@ -437,9 +436,8 @@ input[type="text"], input[type="email"] {
 	padding: 4% 12%;
 	text-decoration: none;
 }
-.button_style2:hover {
-	background-color:#339933;
-	opacity: 50%;
+.button_style2 a:hover {
+	background-color: #339933;
 }
 
 .button_style2:active {
@@ -465,7 +463,6 @@ input[type="text"], input[type="email"] {
 
 .button_style3:hover {
 	background-color:#339933;
-	opacity: 50%;
 }
 
 .button_style3:active {
@@ -592,10 +589,6 @@ input[type="text"], input[type="email"] {
 	header {
 		font-size: .75em;
 		clear: right;
-	}
-	
-	#contact_content h3 {
-		.25em;
 	}
 	
 	#mobile_about_nav, #policies_sub_nav {
