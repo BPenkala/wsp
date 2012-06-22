@@ -9,6 +9,10 @@ header {
 	color: #003366;
 }
 
+#seal {
+	border: none;
+}
+
 #header_left {
 	float: left;
 	width: 60%;
@@ -26,6 +30,10 @@ h3 {
 	font-weight: bold;
 }
 
+h4 {
+	font-weight: bold;
+}
+
 #search1 {
 	float: right;
 	max-width: 38%;
@@ -35,72 +43,6 @@ h3 {
 #search1 input {
 	width: 70%;
 	margin-top: 2%;
-}
-
-.button_style {
-	float: right;
-	background-color: #339933;
-	border-radius: 10px;
-	border: 2px solid #33cc33;
-	display: inline-block;
-	color: #FFF;
-	font-family: inherit;
-	font-size: .7em;
-	font-weight: bold;
-	padding: 3% .25%;
-	text-decoration: none;
-}
-.button_style: hover {
-	background-color:#339933;
-}
-
-.button_style: active {
-	position:relative;
-	top:1px;
-}
-
-.button_style2 {
-	background-color: #339933;
-	border-radius: 10px;
-	border: 2px solid #33cc33;
-	display: inline-block;
-	color: #FFF;
-	font-family: inherit;
-	font-size: 1.25em;
-	font-weight: bold;
-	padding: 4% 12%;
-	text-decoration: none;
-}
-.button_style2:hover {
-	background-color:#339933;
-	opacity: 50%;
-}
-
-.button_style2:active {
-	position:relative;
-	top:1px;
-}
-
-.button_style3 {
-	background-color: #339933;
-	border-radius: 10px;
-	border: 2px solid #33CC33;
-	display: inline-block;
-	color: #FFF;
-	font-family: inherit;
-	font-size: .9em;
-	font-weight: bold;
-	padding: 9% 12%;
-	text-decoration: none;
-}
-.button_style3:hover {
-	background-color:#339933;
-	opacity: 50%;
-}
-
-.button_style3:active {
-	position:relative;
-	top:1px;
 }
 
 #search1 input[type="search"] {
@@ -139,12 +81,20 @@ nav {
 	background: #FFCC33;
 }
 
-nav ul {
+#mobile_about_nav, #policies_sub_nav {
+	border: 1px solid #000;
+	float: left;
+	width: 99.8%;
+	overflow: hidden;
+	background: #003366;
+}
+
+nav ul, #mobile_about_nav ul, #policies_sub_nav ul {
 	margin: 0;
 	padding: 0;
 }
 
-nav ul li {
+nav ul li, #mobile_about_nav ul li, #policies_sub_nav ul li {
 	list-style-type: none;
 	display: inline;
 }
@@ -156,13 +106,36 @@ nav li a {
 	color: #000;
 	text-decoration: none;
 	background: #FFCC33;
-	background: #FFCC33;
+}
+
+#mobile_about_nav li a, #policies_sub_nav li a {
+	display: block;
+	float: left;
+	padding: 1% 4.004% 1% 4.002%;
+	color: #FFF;
+	text-decoration: none;
 }
 
 nav li a:hover { 
 	background: #CC3333; 
 	text-decoration: underline;
 	color: #FFF;
+}
+
+#aside_nav {
+	width: 75%;
+	list-style-type: none;
+}
+
+body#school_about #school_background a,
+body#facts #quick_facts a,
+body#awards_page #awards a,
+body#technology_page #tech a,
+body#policies_page  #absences a,
+body#tardy_page #tardies a,
+body#ause_page #acceptable_use a{
+	color:#CC3333; 
+	font-weight: bold;
 }
 
 #wrapper {
@@ -176,7 +149,6 @@ nav li a:hover {
 	clear: left;
 	float: left;
 	width: 60%;
-	line-height: 1.1em;
 	padding: 0 2% 2% 2%;
 	display: inline;
 }
@@ -200,6 +172,8 @@ nav li a:hover {
 	padding:  1% 2% 2% 2%;
 	display: inline;
 	background: #003366;
+	min-height: 650px;
+	max-height: 850px;
 }
 
 #contact_aside p {
@@ -273,10 +247,21 @@ nav li a:hover {
 	padding: 10% 8% 0 0;
 }
 
-aside, #calendar_aside {
+aside {
 	color: #FFF;
 	float: right;
-	font-size: 1em;
+	width: 30%;
+	min-height: 650px;
+	max-height: 850px;
+	overflow: hidden;
+	padding:  .75% 2% 2% 2%;
+	display: inline;
+	background: #003366;
+}
+
+#calendar_aside {
+	color: #FFF;
+	float: right;
 	width: 30%;
 	padding:  .75% 2% 2% 2%;
 	display: inline;
@@ -284,21 +269,29 @@ aside, #calendar_aside {
 }
 
 #policies_aside, #about_aside {
-	color: #FFF;
 	float: left;
-	width: 30%;
 	padding:  .75% 2% 2% 3%;
-	display: inline;
-	background: #003366;
 }
 
-aside, #calendar_aside p {
-	font-size: .85em;
+#policies_aside {
+	min-height: 975px;
+	max-height: 1200px;
+	overflow: hidden;
+}
+
+#about_aside {
+	min-height: 650px;
+	max-height: 850px;
+	overflow: hidden;
+}
+
+aside p, #calendar_aside p {
+	font-size: .9em;
 	line-height: 1.5em;
 }
 
 #policies_aside p {
-	font-size: .85em;
+	font-size: .9em;
 	line-height: 1.5em;
 }
 
@@ -366,7 +359,7 @@ aside, #calendar_aside p {
 
 #school_img {
 	max-width: 90%;
-	padding: 10% 0 0 0;
+	padding: 10% 0 2% 0;
 }
 
 #office_hours {
@@ -409,6 +402,79 @@ input[type="text"], input[type="email"] {
 	width: 90%;	
 	height: 1.5em;
 }
+/* ----- Button Styles ----------------*/
+.button_style {
+	float: right;
+	background-color: #339933;
+	border-radius: 10px;
+	border: 2px solid #33cc33;
+	display: inline-block;
+	color: #FFF;
+	font-family: inherit;
+	font-size: .7em;
+	font-weight: bold;
+	padding: 3% .25%;
+	text-decoration: none;
+}
+.button_style: hover {
+	background-color:#339933;
+}
+
+.button_style: active {
+	position:relative;
+	top:1px;
+}
+
+.button_style2 {
+	background-color: #339933;
+	border-radius: 10px;
+	border: 2px solid #33cc33;
+	display: inline-block;
+	color: #FFF;
+	font-family: inherit;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding: 4% 12%;
+	text-decoration: none;
+}
+.button_style2:hover {
+	background-color:#339933;
+	opacity: 50%;
+}
+
+.button_style2:active {
+	position:relative;
+	top:1px;
+}
+
+.button_style3 {
+	background-color: #339933;
+	border-radius: 10px;
+	border: 2px solid #33CC33;
+	display: inline-block;
+	color: #FFF;
+	font-family: inherit;
+	font-size: .85em;
+	font-weight: bold;
+	padding: 7% 7%;
+	text-decoration: none;
+}
+.button_style3 a {
+	
+}
+
+.button_style3:hover {
+	background-color:#339933;
+	opacity: 50%;
+}
+
+.button_style3:active {
+	position:relative;
+	top:1px;
+}
+
+/* ----- End Button Styles ----------------*/
+
 
 /* --- Begin Contact Form Styling --------------------*/
 #contact_form {
@@ -438,16 +504,36 @@ input[type="text"], input[type="email"] {
 #contact_form select {
 	height: 2em;
 	width: 50%;
-	margin-bottom: .75em;
+	margin-bottom: 5%;
 }
 /* --- End Contact Form Styling --------------------*/
 
 /* ---Begin Media Queries--------------- */
 
+/*---  Media Query for large displays (desktop) ---*/
+@media only screen and (min-width: 960px) and (max-width: 1920px) {
+	#mobile_about_nav, #policies_sub_nav {
+		display: none;
+	}
+	
+	#small_calendar {
+		display: none;
+	}
+	
+	#med_calendar {
+		display: none;
+	}
+}
+/*---  End Media Query for large displays (desktop) ---*/
+
 /*---  Media Query for full-size displays (desktop/laptop) ---*/
 @media only screen and (min-width: 768px) and (max-width: 960px) {
 	header {
 		font-size: .9em;
+	}
+	
+	#mobile_about_nav, #policies_sub_nav {
+		display: none;
 	}
 	
 	nav {
@@ -468,9 +554,12 @@ input[type="text"], input[type="email"] {
 		background: #FFCC33;
 	}
 
+	#small_calendar {
+		display: none;
+	}
 	
-	aside {
-		font-size: .9em;
+	#med_calendar {
+		display: none;
 	}
 	
 	#cta, #events, #newsletter {
@@ -488,6 +577,13 @@ input[type="text"], input[type="email"] {
 	footer {
 		font-size: .85em;
 	}
+	
+	#contact_form {
+	float: left;
+	width: 75%;
+	padding: .75% 2.5% 0 2.5%;
+	}
+
 }
 /*---  End Media Query for full-size displays (desktop/laptop) ---*/
 
@@ -495,6 +591,15 @@ input[type="text"], input[type="email"] {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	header {
 		font-size: .75em;
+		clear: right;
+	}
+	
+	#contact_content h3 {
+		.25em;
+	}
+	
+	#mobile_about_nav, #policies_sub_nav {
+		display: none;
 	}
 	
 	nav li a {
@@ -513,8 +618,12 @@ input[type="text"], input[type="email"] {
 		width: 30%;
 	}
 	
-	#main_content {
-		font-size: .85em;
+	aside a {
+		font-size: .725em;
+	}
+	
+	#main_content p, #contact_content, #about_content, #policies_content {
+		font-size: .9em;
 	}
 	
 	#search1 {
@@ -524,6 +633,18 @@ input[type="text"], input[type="email"] {
 		font-size: .75em;
 	}
 	
+	#calendar {
+		display: none;
+	}
+	
+	#small_calendar {
+		display: none;
+	}
+	
+	#calendar_aside {
+		display: none;
+	}
+	
 	#upcoming_cal {
 		display: none;
 	}
@@ -531,42 +652,93 @@ input[type="text"], input[type="email"] {
 	.button_style2 {
 		font-size: .75em;
 	}
-	
+
 	footer {
 		font-size: .75em;
 	}
-
-
 }
 /*--- End Media Query for medium displays (tablets/readers/iPads) ---*/
 
 /*---  Media Query for smaller displays (smartphone) ---*/
 @media only screen and (max-width: 480px) {
 	header {
-		font-size: .8em;
+		float: none;
+		font-size: .7em;
+		padding: 1%;
+	}
+	
+	#header_left {
+		width: 95%;
 	}
 	
 	header img {
 		display: none;
 	}
-	nav ul {
-		font-size: .85em;
-		list-style-type: none;
-		padding: .5% 0;
+	
+	#wrapper {
+		border: none;
 	}
-	nav li a {
-		display: block;
-		padding: 5%;
-		text-decoration: none;
-		list-style-type: none;
-		letter-spacing: 0.1em;
-		line-height: 1.75em;
-		height: 1.75em;
-		border-top: 1px solid #000;
-		border-bottom: 1px solid #000;
+	
+	#mobile_about_nav, #policies_sub_nav {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 3%;
 	}
+	
+	#mobile_about_nav li a, #policies_sub_nav li a{
+		background: #003366;
+	}
+	
+	nav, #mobile_about_nav, #policies_sub_nav{
+		font-size: 0.75em; 
+	}
+		
+	nav ul, #mobile_about_nav ul, #policies_sub_nav ul {
+		margin: 0; 
+		padding: 0;
+		}
+	nav li, #mobile_about_nav li, #policies_sub_nav li {
+		list-style: none;
+		border-width: 1px;
+		}
+
+	nav a, #mobile_about_nav a, #policies_sub_nav a {
+		color: #fff;
+		cursor: pointer;
+		display:block;
+		height: 25px;
+		line-height: 25px;
+		text-indent: 10px;                   
+		text-decoration:none;
+		width:100%;
+	}
+	nav a:hover, #mobile_about_nav a:hover, #policies_sub_nav a:hover{
+		text-decoration:underline;
+	}
+	
+	#about_content, #policies_content, #contact_content  {
+		font-size: .9em;
+		float: left;
+		width: 95%;
+		padding: 1% 5% 5% 5%;
+		clear: both;
+	}
+	
+	#main_content {
+		font-size: .9em;
+		float: left;
+		width: 93%;
+		padding: 3%;
+		clear: both;
+	}
+		
+	#main_content p, #contact_content, #policies_content {
+		font-size: .75em;
+	}
+	
 	#cta p {
-		font-size: .65em;
+		font-size: .85em;
 	}
 	
 	body {
@@ -574,11 +746,14 @@ input[type="text"], input[type="email"] {
 	}
 	#contact_form {
 		float: left;
-		margin: 3%;
 
 	}
 	aside, #contact_aside {
-		display: none;
+		float: left;
+		width: 91%;
+		padding: 5%;
+		font-size: .85em;
+		text-align: center;
 	}
 	
 	#search1 {
@@ -596,8 +771,48 @@ input[type="text"], input[type="email"] {
 		font-size: .8em;
 	}
 	
+	#calendar {
+		display: none;
+	}
+	
+	#med_calendar {
+		display: none;
+	}
+	
+	#calendar_aside, #policies_aside, #about_aside {
+		display: none;
+	}
+		
+	#contact_form label {
+	display: block;
+	margin: 1.1em 0 0;
+	}
+	
+	#contact_form input:focus {
+	border: 1px solid #FF0000;
+	}
+	
+	#contact_form input[type="text"], #contact_form input[type="email"] {
+	clear: both;
+	width: 100%;
+	border: 1px solid #000;	
+	height: 2em;
+	}
+	
+	#contact_form textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: .25em;
+	}
+	
+	#contact_form select {
+	height: 1.5em;
+	width: 50%;
+	margin-bottom: 5%;
+	}
+	
 	footer {
-		font-size: .85em;
+		font-size: .75em;
 	}
 
 }
