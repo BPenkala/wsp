@@ -730,7 +730,7 @@ input[type="text"], input[type="email"] {
 		clear: both;
 	}
 		
-	#main_content p, #contact_content, #policies_content {
+	#main_content, #contact_content, #policies_content {
 		font-size: .75em;
 	}
 	
