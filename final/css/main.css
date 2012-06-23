@@ -126,13 +126,13 @@ nav li a:hover {
 	list-style-type: none;
 }
 
-body#school_about #school_background a,
-body#facts #quick_facts a,
-body#awards_page #awards a,
-body#technology_page #tech a,
-body#policies_page  #absences a,
-body#tardy_page #tardies a,
-body#ause_page #acceptable_use a{
+body#school_about #school_background2 a,
+body#facts #quick_facts2 a,
+body#awards_page #awards2 a,
+body#technology_page #tech2 a,
+body#policies_page  #absences2 a,
+body#tardy_page #tardies2 a,
+body#ause_page #acceptable_use2 a{
 	color:#CC3333; 
 	font-weight: bold;
 }
