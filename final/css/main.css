@@ -132,8 +132,8 @@ body#awards_page #awards2 a,
 body#technology_page #tech2 a,
 body#policies_page  #absences2 a,
 body#tardy_page #tardies2 a,
-body#ause_page #acceptable_use2 a{
-	color:#CC3333; 
+body#ause_page #acceptable_use2 a {
+	color: #CC3333; 
 	font-weight: bold;
 }
 
@@ -267,15 +267,19 @@ aside {
 	background: #003366;
 }
 
-#policies_aside, #about_aside {
+#policies_aside, #about_aside, #acceptable_use_aside {
 	float: left;
 	padding:  .75% 2% 2% 3%;
 }
 
 #policies_aside {
-	min-height: 975px;
-	max-height: 1200px;
+	min-height: 1050px;
+	max-height: 1250px;
 	overflow: hidden;
+}
+
+#acceptable_use_aside {
+	max-height: 675px;
 }
 
 #about_aside {
@@ -294,7 +298,7 @@ aside p, #calendar_aside p {
 	line-height: 1.5em;
 }
 
-#aside, #about_aside a {
+#aside, #about_aside a, #acceptable_use_aside a {
 	color: #FFF;
 }
 
@@ -616,7 +620,7 @@ input[type="text"], input[type="email"] {
 	}
 	
 	#main_content p, #contact_content, #about_content, #policies_content {
-		font-size: .9em;
+		font-size: .85em;
 	}
 	
 	#search1 {
